@@ -1,0 +1,82 @@
+<html>
+<head>
+<link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+	<div>
+		<form>
+			Unesite vase ime i prezime:
+			<input name="imePrezime" type="name"></input> <br>
+			Unesite broj osoba:
+			<input name="brojOsoba" type="number"></input> <br>
+			<label name="mesto">
+				Odaberite mesto putovanja:
+				<select>
+					<option>Madjarska</option>
+					<option>Bugarska</option>
+					<option>Rumunija (smrt)</option>
+				</select>
+			</label> <br>
+			Odaberite broj dana:
+			<input name="brojDana" type="number"></input> <br>
+			<button onclick="dugme()">Potvrdi</button>
+			<p  id="demo"></p>
+		</form>
+	
+	</div>
+
+
+
+	<div>
+	<div id="tabs">
+		<ul>
+			<li><a href="#madjarska">Madjarska</a></li>
+			<li><a href="#bugarska">Bugarska</a></li>
+			<li><a href="#rumunija">Rumunija</a></li>
+		</ul>
+		<div id="madjarska">
+		<p>
+		psakda ]k []skda[pasd p[kasdpoasdpkas podjaspokdapsk
+		</p>
+	</div>
+	
+	<div id="bugarska">
+		<p>
+			The term "domestic dog" is generally used for both domesticated and feral varieties. The English word dog comes from Middle English dogge, from Old English docga, a "powerful dog breed". The term may derive from Proto-Germanic *dukkōn, represented in Old English finger-docce ("finger-muscle") or (as suggested by Piotr Gąsiorowski) the Old English colour adjective dox, meaning "brown" or "tan". In either case, the word seems to have been derived via the diminutive suffix -ga also seen in frogga "frog", picga "pig", stagga "stag", wicga "beetle, worm", among others.
+		</p>
+	</div>
+		
+	<div id="rumunija">
+		<p>
+			Hamsters are rodents (order Rodentia) belonging to the subfamily Cricetinae, which contains about 25 species classified in six or seven genera. They have become established as popular small house pets,but, because they are easy to breed in captivity, hamsters are also often used as laboratory animals.
+		</p>
+	</div>
+</div>
+	<div>
+	<p>Enter date: <input type="text" id="datepicker-1"> </p>
+	</div>
+	</div>
+	<div>
+		<script>
+			$(function(){
+				$("#tabs").tabs();
+			});
+		
+		$(function(){
+			$("#datepicker-1").datepicker();
+		});
+		
+		
+		</script>
+	
+	</div>
+
+
+
+
+
+
+</body>
+</html>
